@@ -1,7 +1,8 @@
 <div align="center">
 	<br>
+	<img src="media/awesome-free-llm-apis.png" width="500" alt="Awesome Free LLM APIs">
 	<br>
-	<h1>Awesome Free LLM APIs</h1>
+	<br>
 	<a href="https://awesome.re">
 		<img src="https://awesome.re/badge-flat2.svg" alt="Awesome">
 	</a>
