@@ -57,15 +57,6 @@ Free "Experiment" plan, no credit card. ~1B tokens/month.
 | Codestral | 256K | 256K | Code | ~1 RPS, 500K TPM |
 | Pixtral Large | 128K | 128K | Text + Image | ~1 RPS, 500K TPM |
 
-### [OpenAI](https://platform.openai.com/api-keys) 🇺🇸
-
-Free tier with very restrictive rate limits. Suitable for prototyping only. [^5]
-
-| Model Name | Context | Max Output | Modality | Rate Limit |
-|---|---|---|---|---|
-| gpt-4o-mini | 128K | 16K | Text + Image | ~3 RPM, 200 RPD |
-| gpt-5-mini | 128K | 16K | Text + Image | ~3 RPM, 200 RPD |
-
 ### [Z AI (Zhipu AI)](https://open.bigmodel.cn/usercenter/apikeys) 🇨🇳
 
 Permanent free models, no credit card required.
@@ -157,7 +148,7 @@ Free Serverless Inference API + ~$0.10/month free credits. Thousands of models.
 
 ### [Kilo Code](https://kilo.ai) 🇺🇸
 
-Free models with no credit card required. ~29 rotating free models. Base URL: `https://api.kilo.ai/api/gateway`. [^6]
+Free models with no credit card required. ~29 rotating free models. Base URL: `https://api.kilo.ai/api/gateway`. [^5]
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -276,5 +267,4 @@ Know a free tier that's missing? [Open a PR](contributing.md). Include the provi
 [^2]: Groq rate limits vary by model. Llama 4 Maverick is limited to 500 RPD. Most other models get 14,400 RPD ([rate limits](https://console.groq.com/docs/rate-limits)).
 [^3]: Ollama Cloud measures usage by GPU time, not tokens or requests. Free tier described as "light usage" with session limits resetting every 5 hours and weekly limits every 7 days. Pro (50x more) and Max (250x more) plans available. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud).
 [^4]: Free models default to 200 RPD. A one-time purchase of $10+ in credits unlocks 1,000 RPD for free models. OpenRouter also offers a [Free Models Router](https://openrouter.ai/docs/guides/routing/routers/free-models-router) (`openrouter/free`) and [model fallbacks](https://openrouter.ai/docs/guides/routing/model-fallbacks) for chaining models in priority order.
-[^5]: OpenAI free tier is extremely restrictive (~3 RPM, 200 RPD, 40K TPM). Only mini models are available. Credit card not required but features are very limited.
-[^6]: Kilo Code free model list is dynamic and rotates based on partnerships. Free models log prompts for improvement. Auto-router available: `kilo-auto/free`.
+[^5]: Kilo Code free model list is dynamic and rotates based on partnerships. Free models log prompts for improvement. Auto-router available: `kilo-auto/free`.
