@@ -100,7 +100,7 @@ Free tier, no credit card. Ultra-fast inference (~2,600 tok/s). 1M tokens/day ca
 
 ### [GitHub Models](https://github.com/marketplace/models) 🇺🇸
 
-Free prototyping for all GitHub users. 45+ models. Per-request limits (8K in / 4K out).
+Free prototyping for all GitHub users. Per-request limits: 8K in / 4K out.
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -135,7 +135,7 @@ Free tier, no credit card. Ultra-fast LPU inference. [^2]
 
 ### [Hugging Face](https://huggingface.co/settings/tokens) 🇺🇸
 
-Free Serverless Inference API + ~$0.10/month free credits. Thousands of models.
+Free Serverless Inference API + ~$0.10/month free credits.
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -148,7 +148,7 @@ Free Serverless Inference API + ~$0.10/month free credits. Thousands of models.
 
 ### [Kilo Code](https://kilo.ai) 🇺🇸
 
-Free models with no credit card required. ~29 rotating free models. Base URL: `https://api.kilo.ai/api/gateway`. [^5]
+Free models with no credit card required. Base URL: `https://api.kilo.ai/api/gateway`. [^5]
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -167,7 +167,7 @@ Free models with no credit card required. ~29 rotating free models. Base URL: `h
 
 ### [LLM7.io](https://token.llm7.io) 🇬🇧
 
-Zero-friction API gateway. No registration needed for basic access. 30+ models.
+Zero-friction API gateway. No registration needed for basic access.
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -181,7 +181,7 @@ Zero-friction API gateway. No registration needed for basic access. 30+ models.
 
 ### [NVIDIA NIM](https://build.nvidia.com/explore/discover) 🇺🇸
 
-Free with NVIDIA Developer Program membership. 100+ models. No daily token cap.
+Free with NVIDIA Developer Program membership. No daily token cap.
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
@@ -199,7 +199,7 @@ Free with NVIDIA Developer Program membership. 100+ models. No daily token cap.
 
 ### [Ollama Cloud](https://ollama.com/settings/keys) 🇺🇸
 
-Free tier with qualitative usage limits. 400+ models from Ollama library. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud). [^3]
+Free tier with qualitative usage limits.
 
 | Model Name | Context | Max Output | Modality | Rate Limit |
 |---|---|---|---|---|
