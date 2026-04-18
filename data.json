@@ -1053,10 +1053,25 @@
     }
   ],
   "glossary": [
-    { "abbreviation": "RPM", "meaning": "Requests per minute" },
-    { "abbreviation": "RPD", "meaning": "Requests per day" },
-    { "abbreviation": "TPM", "meaning": "Tokens per minute" },
-    { "abbreviation": "TPD", "meaning": "Tokens per day" },
-    { "abbreviation": "RPS", "meaning": "Requests per second" }
+    {
+      "abbreviation": "RPM",
+      "meaning": "Requests per minute"
+    },
+    {
+      "abbreviation": "RPD",
+      "meaning": "Requests per day"
+    },
+    {
+      "abbreviation": "TPM",
+      "meaning": "Tokens per minute"
+    },
+    {
+      "abbreviation": "TPD",
+      "meaning": "Tokens per day"
+    },
+    {
+      "abbreviation": "RPS",
+      "meaning": "Requests per second"
+    }
   ]
 }
