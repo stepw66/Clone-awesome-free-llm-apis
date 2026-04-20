@@ -193,6 +193,19 @@ Base URL: `https://api.llm7.io/v1`
 | qwen2.5-coder-32b | — | — | Text (code) | 30 RPM (120 with token) |
 | + ~24 more models | Varies | Varies | Text | 30 RPM (120 with token) |
 
+### [ModelScope](https://modelscope.cn/my/myaccesstoken) 🇨🇳
+
+Free API-Inference for registered users. Requires Alibaba Cloud account binding + real-name verification. [^6]
+
+Base URL: `https://api-inference.modelscope.cn/v1`
+
+| Model Name | Context | Max Output | Modality | Rate Limit |
+|---|---|---|---|---|
+| Qwen/Qwen3.5-35B-A3B | — | — | Text + Vision | 2,000 RPD total; <=500 RPD/model (dynamic) |
+| Qwen/Qwen3.5-27B | — | — | Text | 2,000 RPD total; <=500 RPD/model (dynamic) |
+| Qwen/Qwen-Image | — | — | Image Generation | 2,000 RPD total; model/AIGC-specific caps |
+| + API-Inference-enabled models | Varies | Varies | LLM, MLLM, AIGC | Dynamic quotas + dynamic concurrency |
+
 ### [NVIDIA NIM](https://build.nvidia.com/explore/discover) 🇺🇸
 
 Free with NVIDIA Developer Program membership. 100+ models. No daily token cap.
@@ -290,3 +303,4 @@ Know a free tier that's missing? [Open a PR](contributing.md). Include the provi
 [^3]: Ollama Cloud measures usage by GPU time, not tokens or requests. Free tier described as "light usage" with session limits resetting every 5 hours and weekly limits every 7 days. Pro (50x more) and Max (250x more) plans available. Not OpenAI SDK-compatible; uses [Ollama API](https://docs.ollama.com/cloud).
 [^4]: Free models default to 200 RPD. A one-time purchase of $10+ in credits unlocks 1,000 RPD for free models. OpenRouter also offers a [Free Models Router](https://openrouter.ai/docs/guides/routing/routers/free-models-router) (`openrouter/free`) and [model fallbacks](https://openrouter.ai/docs/guides/routing/model-fallbacks) for chaining models in priority order.
 [^5]: Kilo Code free model list may change over time. nvidia/nemotron-3-super-120b-a12b:free is for trial use only — prompts are logged by NVIDIA. Auto-router `kilo-auto/free` routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%).
+[^6]: API-Inference is free for registered users. Current published limits are 2,000 requests/day per user (total across models), with per-model daily quotas dynamically adjusted and capped at 500; concurrency is also dynamically rate-limited. Requires Alibaba Cloud account binding and real-name verification ([limits](https://modelscope.cn/docs/model-service/API-Inference/limits), [intro](https://modelscope.cn/docs/model-service/API-Inference/intro)).

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-04-17",
+  "lastUpdated": "2026-04-20",
   "providers": [
     {
       "name": "Cohere",
@@ -686,6 +686,50 @@
       ]
     },
     {
+      "name": "ModelScope",
+      "category": "inference_provider",
+      "country": "CN",
+      "flag": "\ud83c\udde8\ud83c\uddf3",
+      "url": "https://modelscope.cn/my/myaccesstoken",
+      "baseUrl": "https://api-inference.modelscope.cn/v1",
+      "description": "Free API-Inference for registered users. Requires Alibaba Cloud account binding + real-name verification.",
+      "footnoteRef": 6,
+      "models": [
+        {
+          "id": "Qwen/Qwen3.5-35B-A3B",
+          "name": "Qwen/Qwen3.5-35B-A3B",
+          "context": "\u2014",
+          "maxOutput": "\u2014",
+          "modality": "Text + Vision",
+          "rateLimit": "2,000 RPD total; <=500 RPD/model (dynamic)"
+        },
+        {
+          "id": "Qwen/Qwen3.5-27B",
+          "name": "Qwen/Qwen3.5-27B",
+          "context": "\u2014",
+          "maxOutput": "\u2014",
+          "modality": "Text",
+          "rateLimit": "2,000 RPD total; <=500 RPD/model (dynamic)"
+        },
+        {
+          "id": "Qwen/Qwen-Image",
+          "name": "Qwen/Qwen-Image",
+          "context": "\u2014",
+          "maxOutput": "\u2014",
+          "modality": "Image Generation",
+          "rateLimit": "2,000 RPD total; model/AIGC-specific caps"
+        },
+        {
+          "id": null,
+          "name": "+ API-Inference-enabled models",
+          "context": "Varies",
+          "maxOutput": "Varies",
+          "modality": "LLM, MLLM, AIGC",
+          "rateLimit": "Dynamic quotas + dynamic concurrency"
+        }
+      ]
+    },
+    {
       "name": "NVIDIA NIM",
       "category": "inference_provider",
       "country": "US",
@@ -1050,6 +1094,10 @@
     {
       "id": 5,
       "text": "Kilo Code free model list may change over time. nvidia/nemotron-3-super-120b-a12b:free is for trial use only \u2014 prompts are logged by NVIDIA. Auto-router `kilo-auto/free` routes to minimax/minimax-m2.5:free (80%) and stepfun/step-3.5-flash:free (20%)."
+    },
+    {
+      "id": 6,
+      "text": "API-Inference is free for registered users. Current published limits are 2,000 requests/day per user (total across models), with per-model daily quotas dynamically adjusted and capped at 500; concurrency is also dynamically rate-limited. Requires Alibaba Cloud account binding and real-name verification ([limits](https://modelscope.cn/docs/model-service/API-Inference/limits), [intro](https://modelscope.cn/docs/model-service/API-Inference/intro))."
     }
   ],
   "glossary": [
